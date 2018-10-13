@@ -1,0 +1,132 @@
+/* lists/index ================================ */
+.title {
+  font-weight: 300;
+  margin: 20px 0;
+  font-size: 48px;
+  color: #979797;
+}
+
+.lists-index-item {
+  padding: 20px 30px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #c1ced7;
+}
+
+.list-user-name a {
+  font-weight: 600;
+}
+
+.list-user-name a:hover {
+  color: #3ecdc6;
+}
+
+.list-name a:hover {
+  color: #3ecdc6;
+}
+
+.list-left {
+  float: left;
+  width: 10%;
+}
+
+.list-left img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px #c1ced7;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.list-right {
+  float: left;
+  width: 90%;
+  padding-left: 20px;
+  text-align: left;
+}
+
+/* lists/show ================================ */
+.lists-show form {
+  display: inline;
+}
+
+/*.lists-show-item {
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 2px 6px #c1ced7;
+  overflow: hidden;
+}*/
+
+.lists-show-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px #c1ced7;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.lists-show-item .list-user-name {
+  vertical-align: middle;
+}
+
+.lists-show-item p {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.list-create-time {
+  color: #8899a6;
+  margin-bottom: 10px;
+}
+
+.book-name a:hover {
+  color: #3ecdc6;
+}
+
+.like-btn {
+  color: #8899a6;
+}
+
+.like-btn-unlike {
+  color: #ff2581;
+}
+
+.lists-show-item .fa {
+  font-size: 16px;
+  margin-right: 3px;
+}
+
+.user-form-bottom {
+  background-color: white;
+  box-shadow: 0 2px 6px #c1ced7;
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.list-menu {
+  float: right;
+}
+
+.list-menu a {
+  color: #8899a6;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.twitter-share-button {
+  vertical-align: middle;
+}
+
+/* lists/new ================================ */
+.lists-form input {
+  margin-bottom: 15px;
+}
+
+.lists-new textarea::-webkit-input-placeholder {
+  font-size: 24px;
+  opacity: 0.5;
+}

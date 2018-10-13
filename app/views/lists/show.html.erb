@@ -1,0 +1,41 @@
+<%# ============================List詳細=============================%>
+<div class="main lists-show">
+  <div class="container">
+    <div class="title">
+      <%= @list.name %>
+    </div>
+    <div class="user-form-top">
+      <div class="list-left">
+        <img src="<%= "/user_images/#{@user.image_name}" %>">
+      </div>
+      <div class="list-right">
+        <div class="list-user-name">
+          <%= link_to(@user.name, "/users/#{@user.id}") %>
+        </div>
+        <div class="list-create-time">
+          <%= @list.created_at %>
+        </div>
+      </div>
+    </div>
+    <% @books.each do |book| %>
+      <% if book[:name].present? %>
+        <div class="lists-index-item">
+          <div class="list-right">
+            <div class="book-name">
+              <%= link_to(book[:name], "#{book[:url]}") %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+    <div class="user-form-bottom">
+      <div class="list-menu">
+        <% if @current_user && @list.user_id == @current_user.id %>
+          <%= link_to("編集", "/lists/#{@list.id}/edit") %>
+          <%= link_to("削除", "/lists/#{@list.id}/destroy", {method: "post"}) %>
+        <% end %>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </div>
+</div>

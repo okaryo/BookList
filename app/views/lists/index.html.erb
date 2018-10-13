@@ -1,0 +1,22 @@
+<div class="main lists-index">
+  <div class="container">
+    <div class="title">
+      <p>リスト一覧</p>
+    </div>
+    <% @lists.each do |list| %>
+      <div class="lists-index-item">
+        <div class="list-left">
+          <img src="<%= "/user_images/#{list.user.image_name}" %>">
+        </div>
+        <div class="list-right">
+          <div class="list-user-name">
+            <%= link_to(list.user.name, "/users/#{list.user.id}") %>
+          </div>
+          <div class="list-name">
+            <%= link_to(list.name, "/lists/#{list.id}") %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

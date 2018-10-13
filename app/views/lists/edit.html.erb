@@ -1,0 +1,42 @@
+<div class="main lists-edit">
+  <div class="container">
+    <div class="title">
+      <p>リストの編集</p>
+    </div>
+    <div class="form lists-form">
+      <div class="form-body">
+        <% if @error_message %>
+          <div class="form-error">
+            <%= @error_message %>
+          </div>
+        <% end %>
+          
+        <%= form_tag("/lists/#{@list.id}/update") do %>
+          <p>リスト名(15字以内)</p>
+          <input name="name" value="<%= @list.name %>">
+          <p>本のタイトル/１冊目</p>
+          <input name="book1" value="<%= @list.book1 %>">
+          <p>URL</p>
+          <input name="book1_url" value="<%= @list.book1_url %>">
+          <p>本のタイトル/２冊目</p>
+          <input name="book2" value="<%= @list.book2 %>">
+          <p>URL</p>
+          <input name="book2_url" value="<%= @list.book2_url %>">
+          <p>本のタイトル/３冊目</p>
+          <input name="book3" value="<%= @list.book3 %>">
+          <p>URL</p>
+          <input name="book3_url" value="<%= @list.book3_url %>">
+          <p>本のタイトル/４冊目</p>
+          <input name="book4" value="<%= @list.book4 %>">
+          <p>URL</p>
+          <input name="book4_url" value="<%= @list.book4_url %>">
+          <p>本のタイトル/５冊目</p>
+          <input name="book5" value="<%= @list.book5 %>">
+          <p>URL</p>
+          <input name="book5_url" value="<%= @list.book5_url %>">
+          <input type="submit" value="保存">
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
