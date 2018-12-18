@@ -27,5 +27,5 @@ production:
   database: booklist_production
   pool: 5
   username: root
-  password:
+  password: OKAryo-8118
   host: localhost
