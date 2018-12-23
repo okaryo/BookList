@@ -1,0 +1,15 @@
+/* css for tablet */
+@media all and (max-width: 1000px) {
+  
+}
+
+/* css for mobile */
+@media all and (max-width: 670px) {
+  .top-message {
+    vertical-align: center;
+  }
+  
+  .top-main h1 {
+    font-size: 40px;
+  }
+}
