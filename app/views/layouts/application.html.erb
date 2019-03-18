@@ -4,18 +4,22 @@
     <title>BookList</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheets" href="home.scss">
+    <link rel="stylesheets" href="responsive.scss">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'favicon-booklist.ico' %>
   </head>
 
   <body>
     <header>
       <div class="header-logo">
         <% if @current_user %>
-          <%= link_to("BookList", "/lists/index") %>
+          <%= link_to(image_tag('/assets/BookList-title.png', alt: 'BookList', size: '250x60'), "/lists/index") %>
         <% else %>
-          <%= link_to("BookList", "/") %>
+          <%= link_to(image_tag('/assets/BookList-title.png', alt: 'BookList', size: '250x60'), "/") %>
         <% end %>
       </div>
       <ul class="header-menus">
