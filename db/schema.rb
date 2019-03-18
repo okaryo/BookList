@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2018_10_08_084001) do
 
-  create_table "lists", force: :cascade do |t|
+  create_table "lists", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "book1"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2018_10_08_084001) do
     t.text "book5_url"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.string "email"
     t.string "image_name"
