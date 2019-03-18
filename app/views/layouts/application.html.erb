@@ -10,16 +10,16 @@
     <link rel="stylesheets" href="home.scss">
     <link rel="stylesheets" href="responsive.scss">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= favicon_link_tag('/assets/favicon-booklist.ico') %>
+    <%= favicon_link_tag('favicon-booklist.ico') %>
   </head>
 
   <body>
     <header>
       <div class="header-logo">
         <% if @current_user %>
-          <%= link_to(image_tag('/assets/BookList-title.png', alt: 'BookList', size: '250x60'), "/lists/index") %>
+          <%= link_to(image_tag('BookList-title.png', alt: 'BookList', size: '250x60'), "/lists/index") %>
         <% else %>
-          <%= link_to(image_tag('/assets/BookList-title.png', alt: 'BookList', size: '250x60'), "/") %>
+          <%= link_to(image_tag('BookList-title.png', alt: 'BookList', size: '250x60'), "/") %>
         <% end %>
       </div>
       <ul class="header-menus">
