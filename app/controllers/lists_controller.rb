@@ -50,6 +50,8 @@ class ListsController < ApplicationController
   def create
     @list = List.new(
       name: params[:name],
+      comment: params[:comment],
+      book_name: params[:book_name],
       book1: params[:book1],
       book1_url: params[:book1_url],
       book2: params[:book2],

@@ -1,0 +1,2 @@
+class Listbook < ApplicationRecord
+end

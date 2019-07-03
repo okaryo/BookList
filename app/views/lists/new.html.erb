@@ -14,26 +14,10 @@
         <%= form_tag("/lists/create") do %>
           <p>リスト名(15字以内)</p>
           <input name="name" value="<%= @name %>">
-          <p>本のタイトル/１冊目</p>
-          <input name="book1" value="<%= @book1 %>">
-          <p>URL</p>
-          <input name="book1_url" value="<%= @book1_url %>">
-          <p>本のタイトル/２冊目</p>
-          <input name="book2" value="<%= @book2 %>">
-          <p>URL</p>
-          <input name="book2_url" value="<%= @book2_url %>">
-          <p>本のタイトル/３冊目</p>
-          <input name="book3" value="<%= @book3 %>">
-          <p>URL</p>
-          <input name="book3_url" value="<%= @book3_url %>">
-          <p>本のタイトル/４冊目</p>
-          <input name="book4" value="<%= @book4 %>">
-          <p>URL</p>
-          <input name="book4_url" value="<%= @book4_url %>">
-          <p>本のタイトル/５冊目</p>
-          <input name="book5" value="<%= @book5 %>">
-          <p>URL</p>
-          <input name="book5_url" value="<%= @book5_url %>">
+          <p>コメント(任意)</p>
+          <input name="comment" value="<% @comment %>">
+          <p>本のタイトル</p>
+          <input name="book_name" value="<%= @book_name %>">
           <input type="submit" value="保存">
         <% end %>
       </div>
